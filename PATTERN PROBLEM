@@ -1,0 +1,118 @@
+#pattern problem 
+ #------------------------------------------------------#
+
+#1#
+
+'''* * * * * 
+   * * * * * 
+   * * * * * 
+   * * * * * 
+   * * * * * 
+'''
+n=5
+for row in range (1,n+1):
+    for col in range (1,n+1):
+        print(' * ',end='')
+    print()
+
+         #or 
+n=5
+for row in range(1,n+1):
+   print("*"*n)
+
+#------------------------------------------------------#
+
+#2#
+'''* 
+     *  
+        *
+           *
+               *'''
+n=5
+for row in range (1,n+1):
+    for col in range (1,n+1):
+       if row==col:
+         print(' * ',end='')
+       else:
+         print(' ',end='')  
+    print()
+
+#------------------------------------------------------#
+
+#3#
+'''     * 
+      * 
+    *  
+  * 
+*
+'''
+
+n=5
+for row in range (1,n+1):
+    for col in range (1,n+1):
+       if row+col==n+1:
+         print(' * ',end=' ')
+       else:
+         print(' ',end=' ')  
+    print()
+
+
+#------------------------------------------------------#
+#4# 
+
+'''
+   *          *
+     *      *
+        *
+     *      *
+  *            *
+
+'''
+
+
+n=5
+for row in range (1,n+1):
+    for col in range (1,n+1):
+       if row+col==n+1 or row ==col:
+         print(' * ',end=' ')
+       else:
+         print(' ',end=' ')  
+    print()
+
+#------------------------------------------------------#
+
+#5#
+
+'''
+* 
+* * 
+* * * 
+* * * * 
+* * * * *
+'''
+
+n=int(input())
+for row in range (1,n+1):
+    for col in range (1,row+1):
+        print(' * ',end=' ')
+    print()
+
+               #or
+
+n=5
+for row in range(1,n+1):
+    for col in range(1,n+1):
+        if row>=col:
+            print("* ",end=" ")
+        else:
+            print(" ",end=" ")
+    print()
+   
+         #or 
+
+n=5
+for row in range(1,n+1):
+    print("*"*row)
+
+
+#------------------------------------------------------#
